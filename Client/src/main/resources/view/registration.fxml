@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.registration.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="394.0" layoutX="87.0" layoutY="97.0" opacity="0.52" stroke="WHITE" strokeType="INSIDE" width="688.0" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="47.0" layoutY="520.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Назад" />
+      <TextField fx:id="name" layoutX="155.0" layoutY="284.0" prefHeight="39.0" prefWidth="250.0" />
+      <Label fx:id="statePassword" layoutX="558.0" layoutY="216.0" text="Пароль" />
+      <Label fx:id="stateName" layoutX="251.0" layoutY="250.0" text="Имя" />
+      <Button fx:id="user23" blendMode="SRC_ATOP" layoutX="354.0" layoutY="431.0" mnemonicParsing="false" onAction="#AddUser" prefHeight="39.0" prefWidth="204.0" text="Зарегистрироваться" />
+      <Label layoutX="343.0" layoutY="27.0" prefHeight="49.0" prefWidth="215.0" text="Регистрация">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="stateSurname" layoutX="242.0" layoutY="172.0" text="Фамилия" />
+      <Label fx:id="stateBankAccount" layoutX="211.0" layoutY="102.0" text="Лицевой счёт" />
+      <TextField fx:id="bank_account" layoutX="156.0" layoutY="133.0" prefHeight="39.0" prefWidth="250.0" />
+      <TextField fx:id="surname" layoutX="155.0" layoutY="206.0" prefHeight="39.0" prefWidth="250.0" />
+      <TextField fx:id="patronymic" layoutX="154.0" layoutY="350.0" prefHeight="39.0" prefWidth="250.0" />
+      <Label fx:id="statePatronymic" layoutX="230.0" layoutY="323.0" text="Отчество" />
+      <Label fx:id="stateLogin" layoutX="556.0" layoutY="146.0" text="Логин" />
+      <TextField fx:id="login" layoutX="483.0" layoutY="177.0" prefHeight="39.0" prefWidth="250.0" />
+      <Label fx:id="statePasswordR" layoutX="531.0" layoutY="282.0" text="Повторите пароль" />
+      <PasswordField fx:id="passwordR" layoutX="483.0" layoutY="317.0" prefHeight="39.0" prefWidth="250.0" />
+      <PasswordField fx:id="password" layoutX="482.0" layoutY="244.0" prefHeight="39.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>

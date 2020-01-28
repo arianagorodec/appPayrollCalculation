@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.accMenu.recalculationWage.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="pAdd" blendMode="SRC_ATOP" layoutX="245.0" layoutY="486.0" mnemonicParsing="false" onAction="#addCAddButtonPushed" prefHeight="39.0" prefWidth="131.0" text="Добавить" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="131.0" layoutY="538.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="39.0" prefWidth="190.0" text="Назад" />
+      <TextField fx:id="name" editable="false" layoutX="347.0" layoutY="97.0" prefHeight="39.0" prefWidth="250.0" />
+      <TextField fx:id="patronymic" editable="false" layoutX="616.0" layoutY="97.0" prefHeight="39.0" prefWidth="250.0" />
+      <TextField fx:id="surname" editable="false" layoutX="60.0" layoutY="97.0" prefHeight="39.0" prefWidth="250.0" />
+      <Label layoutX="60.0" layoutY="63.0" text="Фамилия" />
+      <Label layoutX="347.0" layoutY="63.0" text="Имя" />
+      <Label layoutX="616.0" layoutY="63.0" text="Отчество" />
+      <Label fx:id="stateBank_account" layoutX="63.0" layoutY="136.0" text="Лицевой счет" />
+      <Label layoutX="65.0" layoutY="14.0" prefHeight="49.0" prefWidth="517.0" text="Перерасчёт заработной платы">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="total" editable="false" layoutX="347.0" layoutY="170.0" />
+      <Label layoutX="401.0" layoutY="143.0" text="Начислено">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="payroll" layoutX="65.0" layoutY="330.0" prefHeight="150.0" prefWidth="322.0">
+         <columns>
+            <TableColumn fx:id="cColumnName" prefWidth="200.0" text="Начисления" />
+            <TableColumn fx:id="cColumnSum" prefWidth="121.0" text="Сумма" />
+         </columns>
+      </TableView>
+      <TableView fx:id="deducation" layoutX="535.0" layoutY="330.0" prefHeight="150.0" prefWidth="331.0">
+         <columns>
+            <TableColumn fx:id="dColumnName" prefWidth="233.0" text="Издержки" />
+            <TableColumn fx:id="dColumnSum" prefWidth="97.0" text="Сумма" />
+         </columns>
+      </TableView>
+      <Label layoutX="169.0" layoutY="227.0" text="Начисления">
+         <font>
+            <Font name="SansSerif Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="642.0" layoutY="227.0" text="Удержания">
+         <font>
+            <Font name="SansSerif Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pSum" layoutX="242.0" layoutY="281.0" prefHeight="39.0" prefWidth="143.0" />
+      <Label layoutX="61.0" layoutY="248.0" text="Наименование" />
+      <Label layoutX="242.0" layoutY="248.0" text="Сумма" />
+      <Label layoutX="728.0" layoutY="248.0" text="Сумма" />
+      <Label layoutX="535.0" layoutY="248.0" text="Наименование" />
+      <TextField fx:id="dSum" layoutX="723.0" layoutY="281.0" prefHeight="39.0" prefWidth="143.0" />
+      <Button fx:id="calculation" blendMode="SRC_ATOP" layoutX="599.0" layoutY="538.0" mnemonicParsing="false" onAction="#Calcuation" prefHeight="39.0" prefWidth="204.0" text="Рассчитать" />
+      <Button fx:id="dAdd" blendMode="SRC_ATOP" layoutX="718.0" layoutY="486.0" mnemonicParsing="false" onAction="#addDAddButtonPushed" prefHeight="39.0" prefWidth="131.0" text="Добавить" />
+      <Button fx:id="pDelete" blendMode="SRC_ATOP" layoutX="81.0" layoutY="486.0" mnemonicParsing="false" onAction="#CDeleteButtonPushed" prefHeight="39.0" prefWidth="131.0" text="Удалить" />
+      <Button fx:id="dDelete" blendMode="SRC_ATOP" layoutX="551.0" layoutY="486.0" mnemonicParsing="false" onAction="#DDeleteButtonPushed" prefHeight="39.0" prefWidth="131.0" text="Удалить" />
+      <TextField fx:id="workingDays" layoutX="766.0" layoutY="170.0" onAction="#setWorkingDaysPushed" prefHeight="39.0" prefWidth="125.0" />
+      <TextField fx:id="wasWorked" layoutX="616.0" layoutY="170.0" onAction="#setWasWorkedPushed" prefHeight="39.0" prefWidth="114.0" />
+      <Label layoutX="597.0" layoutY="143.0" text="Отработано дней" />
+      <Label layoutX="773.0" layoutY="143.0" text="Кол-во дней" />
+      <ComboBox fx:id="bank_account" layoutX="57.0" layoutY="170.0" onAction="#setBank_accountPushed" prefHeight="39.0" prefWidth="250.0" />
+      <Label layoutX="880.0" layoutY="31.0" text="г." />
+      <ComboBox fx:id="month" layoutX="585.0" layoutY="25.0" prefHeight="39.0" prefWidth="114.0" />
+      <ComboBox fx:id="year" layoutX="727.0" layoutY="25.0" prefHeight="39.0" prefWidth="143.0" />
+      <ComboBox fx:id="pName" layoutX="57.0" layoutY="281.0" onAction="#setNameChargesPushed" prefHeight="39.0" prefWidth="161.0" />
+      <ComboBox fx:id="dName" layoutX="540.0" layoutY="281.0" onAction="#setNameDedPushed" prefHeight="39.0" prefWidth="161.0" />
+   </children>
+</AnchorPane>

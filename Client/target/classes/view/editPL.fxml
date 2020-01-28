@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.employeeMenu.edit.pl.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="user2" blendMode="SRC_ATOP" layoutX="659.0" layoutY="375.0" mnemonicParsing="false" onAction="#saveLoginButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Сменить логин" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="63.0" layoutY="495.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Назад" />
+      <Ellipse fill="WHITE" layoutX="474.0" layoutY="264.0" opacity="0.65" radiusX="149.0" radiusY="176.0" stroke="WHITE" strokeType="INSIDE" />
+      <TextField fx:id="login" layoutX="349.0" layoutY="210.0" prefHeight="39.0" prefWidth="250.0" />
+      <Label fx:id="statePassword" layoutX="349.0" layoutY="259.0" text="Пароль" />
+      <Label fx:id="stateLogin" layoutX="349.0" layoutY="176.0" text="Логин" />
+      <Label fx:id="stateNewPassword" layoutX="54.0" layoutY="181.0" text="Новый пароль" />
+      <Label fx:id="stateNewPasswordR" layoutX="54.0" layoutY="264.0" text="Повторите пароль" />
+      <Label layoutX="79.0" layoutY="128.0" text="Сменить пароль">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="649.0" layoutY="128.0" text="Сменить логин">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="stateNewLogin" layoutX="636.0" layoutY="193.0" text="Новый логин" />
+      <TextField fx:id="newLogin" layoutX="636.0" layoutY="227.0" prefHeight="39.0" prefWidth="250.0" />
+      <Button fx:id="user22" blendMode="SRC_ATOP" layoutX="63.0" layoutY="381.0" mnemonicParsing="false" onAction="#savePasswordButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Сменить пароль" />
+      <Label layoutX="430.0" layoutY="128.0" text="Введите">
+         <font>
+            <Font name="System Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="27.0" prefHeight="49.0" prefWidth="377.0" text="Смена логина и пароля">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="newPassword" layoutX="53.0" layoutY="210.0" />
+      <PasswordField fx:id="newPasswordR" layoutX="53.0" layoutY="291.0" />
+      <PasswordField fx:id="password" layoutX="349.0" layoutY="291.0" prefHeight="39.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.accMenu.Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="14.0" prefHeight="49.0" prefWidth="281.0" text="Меню бухгалтера">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="registration" blendMode="SRC_ATOP" layoutX="328.0" layoutY="218.0" mnemonicParsing="false" onAction="#recalculationWageButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Пересчитать з/п" />
+      <Button fx:id="user" blendMode="SRC_ATOP" layoutX="328.0" layoutY="166.0" mnemonicParsing="false" onAction="#wageButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Рассчитать з/п" />
+      <Button fx:id="admin" blendMode="SRC_ATOP" layoutX="32.0" layoutY="116.0" mnemonicParsing="false" onAction="#workWithEmployeeButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Работа с сотрудниками" />
+      <Button fx:id="user1" blendMode="SRC_ATOP" layoutX="32.0" layoutY="166.0" mnemonicParsing="false" onAction="#addPostButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Добавить должность" />
+      <Button fx:id="user2" blendMode="SRC_ATOP" layoutX="32.0" layoutY="218.0" mnemonicParsing="false" onAction="#statementButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Составить отчет за месяц" />
+      <Button fx:id="user3" blendMode="SRC_ATOP" layoutX="328.0" layoutY="116.0" mnemonicParsing="false" onAction="#deducationButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Работа с издержками" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="184.0" layoutY="340.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Назад" />
+      <Button fx:id="grafic" blendMode="SRC_ATOP" layoutX="184.0" layoutY="277.0" mnemonicParsing="false" onAction="#graficsButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Графики" />
+   </children>
+</AnchorPane>

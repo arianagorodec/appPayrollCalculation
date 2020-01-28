@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import com.gorodeckaya.classes.MaskField?>
+<?import com.gorodeckaya.classes.NameTextField?>
+<?import com.gorodeckaya.classes.NumberTextField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.accMenu.workWithEmployee.addEmployee.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="addEmployee" blendMode="SRC_ATOP" layoutX="599.0" layoutY="478.0" mnemonicParsing="false" onAction="#addButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Добавить сотрудника" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="63.0" layoutY="478.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Назад" />
+      <NameTextField fx:id="name" layoutX="349.0" layoutY="103.0" prefHeight="39.0" prefWidth="250.0" />
+      <NameTextField fx:id="patronymic" layoutX="618.0" layoutY="103.0" prefHeight="39.0" prefWidth="250.0" />
+      <NameTextField fx:id="surname" layoutX="62.0" layoutY="103.0" prefHeight="39.0" prefWidth="250.0" />
+      <NumberTextField fx:id="rate" layoutX="590.0" layoutY="297.0"/>
+      <TextField fx:id="address" layoutX="590.0" layoutY="378.0" />
+      <TextField fx:id="mail" layoutX="325.0" layoutY="378.0" />
+      <Label fx:id="stateSurname" layoutX="62.0" layoutY="69.0" text="Фамилия" />
+      <DatePicker fx:id="birthday" editable="false" layoutX="63.0" layoutY="194.0" />
+      <Label fx:id="stateName" layoutX="349.0" layoutY="69.0" text="Имя" />
+      <Label fx:id="statePatronymic" layoutX="618.0" layoutY="69.0" text="Отчество" />
+      <Label fx:id="stateBirthday" layoutX="63.0" layoutY="160.0" text="Дата рождения" />
+      <Label fx:id="statePost" layoutX="63.0" layoutY="261.0" text="Должность" />
+      <Label fx:id="stateRate" layoutX="590.0" layoutY="264.0" text="Ставка" />
+      <Label layoutX="326.0" layoutY="344.0" text="e-mail" />
+      <Label layoutX="590.0" layoutY="344.0" text="Адрес" />
+      <Label layoutX="64.0" layoutY="342.0" text="моб.телефон" />
+      <MaskField fx:id="mobPhone" layoutX="63.0" layoutY="376.0" mask="+375(DD)DDD-DD-DD"/>
+      <NumberTextField fx:id="bank_account" layoutX="349.0" layoutY="194.0"/>
+      <Label fx:id="stateBankAccount" layoutX="351.0" layoutY="160.0" text="Лицевой счет" />
+      <ComboBox fx:id="post" layoutX="59.0" layoutY="294.0" onAction="#setPostPushed" prefHeight="39.0" prefWidth="224.0" />
+      <Label fx:id="stateDepartment" layoutX="321.0" layoutY="264.0" text="Отдел" />
+      <ComboBox fx:id="department" layoutX="325.0" layoutY="297.0" onAction="#setDepartmentPushed" prefHeight="39.0" prefWidth="224.0" />
+   </children>
+</AnchorPane>

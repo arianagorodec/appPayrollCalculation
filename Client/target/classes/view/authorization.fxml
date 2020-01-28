@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.authorization.MainController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Ellipse fill="WHITE" layoutX="297.0" layoutY="238.0" opacity="0.87" radiusX="198.0" radiusY="109.0" stroke="WHITE" strokeType="INSIDE" />
+      <Button fx:id="admin" blendMode="MULTIPLY" layoutX="168.0" layoutY="170.0" mnemonicParsing="false" onAction="#accEentryButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Вход для бухгалтера" />
+      <Button fx:id="user" blendMode="MULTIPLY" layoutX="168.0" layoutY="218.0" mnemonicParsing="false" onAction="#empEentryButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Вход для сотрудника" />
+      <Button fx:id="registration" blendMode="MULTIPLY" layoutX="168.0" layoutY="268.0" mnemonicParsing="false" onAction="#registrationButtonPushed" prefHeight="40.0" prefWidth="258.0" text="Регистрация" />
+      <Label layoutX="178.0" layoutY="67.0" prefHeight="49.0" prefWidth="224.0" text="Авторизация">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="port" layoutX="75.0" layoutY="20.0" onAction="#setPort" prefHeight="40.0" prefWidth="83.0" promptText="Port" />
+      <Label layoutX="25.0" layoutY="27.0" text="Port" />
+   </children>
+</AnchorPane>

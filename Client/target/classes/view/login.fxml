@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.authorization.loginAcc.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="63.0" layoutY="495.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Назад" />
+      <Ellipse fill="WHITE" layoutX="475.0" layoutY="300.0" opacity="0.62" radiusX="172.0" radiusY="193.0" stroke="WHITE" strokeType="INSIDE" />
+      <TextField fx:id="login" layoutX="350.0" layoutY="235.0" prefHeight="39.0" prefWidth="250.0" />
+      <Label fx:id="statePassword" layoutX="350.0" layoutY="284.0" text="Пароль" />
+      <Label fx:id="stateLogin" layoutX="350.0" layoutY="201.0" text="Логин" />
+      <Button fx:id="user23" blendMode="SRC_ATOP" layoutX="390.0" layoutY="386.0" mnemonicParsing="false" onAction="#entryButtonPushed" prefHeight="39.0" prefWidth="171.0" text="Войти" />
+      <Label layoutX="435.0" layoutY="126.0" prefHeight="49.0" prefWidth="80.0" text="Вход">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="350.0" layoutY="328.0" prefHeight="39.0" prefWidth="250.0" />
+   </children>
+</AnchorPane>

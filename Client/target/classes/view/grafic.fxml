@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.accMenu.grafic.Controller">
+   <children>
+       <ImageView fitHeight="600.0" fitWidth="800.0">
+           <image>
+               <Image url="@../background.jpg" />
+           </image>
+       </ImageView>
+      <Label fx:id="title" contentDisplay="CENTER" layoutX="166.0" layoutY="10.0" prefHeight="49.0" prefWidth="423.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffffa6" height="81.0" layoutY="519.0" stroke="WHITE" strokeType="INSIDE" width="800.0" />
+      <Button fx:id="payroll" blendMode="MULTIPLY" layoutX="30.0" layoutY="535.0" mnemonicParsing="false" onAction="#payrollButtonPushed" prefHeight="49.0" prefWidth="247.0" text="Средняя з/п за год" />
+      <Button fx:id="amountEmployee" blendMode="MULTIPLY" layoutX="524.0" layoutY="535.0" mnemonicParsing="false" onAction="#amountEmployeeButtonPushed" prefHeight="49.0" prefWidth="247.0" text="Количество сотрудников" />
+      <Button fx:id="workedDays" blendMode="MULTIPLY" layoutX="277.0" layoutY="535.0" mnemonicParsing="false" onAction="#workedDaysButtonPushed" prefHeight="49.0" prefWidth="247.0" text="Отработанные дни за год" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="40.0" prefWidth="140.0" text="Назад" />
+      <PieChart fx:id="pieChart" layoutX="34.0" layoutY="72.0" prefHeight="400.0" prefWidth="732.0" />
+   </children>
+</AnchorPane>

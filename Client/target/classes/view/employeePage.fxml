@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.employeeMenu.Controller">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="161.0" layoutY="14.0" prefHeight="49.0" prefWidth="281.0" text="Меню сотрудника">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="admin" blendMode="SRC_ATOP" layoutX="160.0" layoutY="121.0" mnemonicParsing="false" onAction="#payListButtonPushed" prefHeight="40.0" prefWidth="281.0" text="Просмотреть расчётный счёт" />
+      <Button fx:id="user1" blendMode="SRC_ATOP" layoutX="160.0" layoutY="171.0" mnemonicParsing="false" onAction="#editeEmpButtonPushed" prefHeight="40.0" prefWidth="281.0" text="Изменить данные о себе" />
+      <Button fx:id="user2" blendMode="SRC_ATOP" layoutX="160.0" layoutY="223.0" mnemonicParsing="false" onAction="#editePLButtonPushed" prefHeight="40.0" prefWidth="281.0" text="Изменить логин или пароль" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="208.0" layoutY="307.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="30.0" prefWidth="184.0" text="Назад" />
+   </children>
+</AnchorPane>

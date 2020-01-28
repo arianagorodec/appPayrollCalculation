@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.accMenu.deducations.Controller">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="600.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="24.0" layoutY="342.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Назад" />
+      <TableView fx:id="table" prefHeight="306.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="392.0" text="Наименование" />
+            <TableColumn fx:id="percent" onEditCommit="#onEditPercent" prefWidth="207.0" text="Процент" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

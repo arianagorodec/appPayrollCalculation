@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.employeeMenu.payList.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="createDocument" blendMode="SRC_ATOP" layoutX="670.0" layoutY="547.0" mnemonicParsing="false" onAction="#createDocumentPushed" prefHeight="39.0" prefWidth="249.0" text="Вывести отчет в документ" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="50.0" layoutY="547.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Назад" />
+      <Label layoutX="815.0" layoutY="162.0" text="К выдаче">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="total" editable="false" layoutX="790.0" layoutY="195.0" prefHeight="39.0" prefWidth="132.0" />
+      <TextField fx:id="name" editable="false" layoutX="50.0" layoutY="79.0" prefHeight="39.0" prefWidth="394.0" />
+      <TextField fx:id="salary" editable="false" layoutX="50.0" layoutY="145.0" prefHeight="39.0" prefWidth="132.0" />
+      <TextField fx:id="namePost" editable="false" layoutX="50.0" layoutY="218.0" prefHeight="39.0" prefWidth="132.0" />
+      <TextField fx:id="workedDays" editable="false" layoutX="231.0" layoutY="145.0" prefHeight="39.0" prefWidth="132.0" />
+      <TextField fx:id="department" editable="false" layoutX="231.0" layoutY="218.0" prefHeight="39.0" prefWidth="132.0" />
+      <Label layoutX="50.0" layoutY="118.0" text="Оклад">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="184.0" text="Должность">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="184.0" text="Отдел">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="215.0" layoutY="118.0" text="Отработано дней">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="545.0" layoutY="497.0" text="Итого к удержанию">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="497.0" text="Итого к начислению">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="dSum" editable="false" layoutX="742.0" layoutY="491.0" prefHeight="39.0" prefWidth="218.0" />
+      <TextField fx:id="pSum" editable="false" layoutX="262.0" layoutY="491.0" prefHeight="39.0" prefWidth="241.0" />
+      <Label fx:id="list" layoutX="208.0" layoutY="30.0" prefHeight="49.0" prefWidth="571.0" text="Расчётный лист за">
+         <font>
+            <Font name="System Italic" size="33.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="month" layoutX="563.0" layoutY="35.0" onAction="#monthPushed" prefWidth="150.0" />
+      <ComboBox fx:id="year" layoutX="728.0" layoutY="35.0" onAction="#yearPushed" prefWidth="150.0" />
+      <TableView fx:id="tableCharges" layoutX="54.0" layoutY="268.0" prefHeight="200.0" prefWidth="456.0">
+        <columns>
+            <TableColumn prefWidth="455.0" text="Начисления">
+               <columns>
+                <TableColumn fx:id="cColumnName" prefWidth="259.0" text="Вид начислений" />
+                <TableColumn fx:id="cColumnSum" prefWidth="196.0" text="Сумма" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="tableDeducations" layoutX="510.0" layoutY="268.0" prefHeight="200.0" prefWidth="456.0">
+         <columns>
+            <TableColumn prefWidth="455.0" text="Удержания">
+               <columns>
+                  <TableColumn fx:id="dColumnName" prefWidth="259.0" text="Вид удержаний" />
+                  <TableColumn fx:id="dColumnSum" prefWidth="196.0" text="Сумма" />
+               </columns>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Label layoutX="404.0" layoutY="118.0" text="Ставка">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rate" editable="false" layoutX="404.0" layoutY="143.0" prefHeight="39.0" prefWidth="84.0" />
+   </children>
+</AnchorPane>

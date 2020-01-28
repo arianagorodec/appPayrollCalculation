@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.accMenu.grafic.ControlersPayroll">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@../background.jpg" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="year" layoutX="601.0" layoutY="20.0" onAction="#yearButtonPushed" prefWidth="150.0" />
+      <LineChart fx:id="payrollLineChart" layoutX="34.0" layoutY="96.0" prefHeight="476.0" prefWidth="732.0">
+         <xAxis>
+            <CategoryAxis prefHeight="41.0" prefWidth="655.0" side="BOTTOM" fx:id="xP" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yP" side="LEFT" upperBound="3000.0" />
+         </yAxis>
+      </LineChart>
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="40.0" prefWidth="140.0" text="Назад" />
+      <Label fx:id="title" contentDisplay="CENTER" layoutX="166.0" layoutY="10.0" prefHeight="49.0" prefWidth="423.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

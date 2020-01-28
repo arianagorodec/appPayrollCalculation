@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: PowderBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gorodeckaya.fxml.employeeMenu.edit.employee.Controller">
+<children>
+   <ImageView fitHeight="600.0" fitWidth="900.0">
+      <image>
+         <Image url="@../background.jpg" />
+      </image>
+   </ImageView>      <Button fx:id="saveButton" blendMode="SRC_ATOP" layoutX="599.0" layoutY="478.0" mnemonicParsing="false" onAction="#saveButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Сохранить" />
+      <Button fx:id="user21" blendMode="SRC_ATOP" layoutX="63.0" layoutY="478.0" mnemonicParsing="false" onAction="#prevButtonPushed" prefHeight="39.0" prefWidth="204.0" text="Назад" />
+      <TextField fx:id="name" layoutX="349.0" layoutY="103.0" prefHeight="39.0" prefWidth="250.0" />
+      <TextField fx:id="patronymic" layoutX="618.0" layoutY="103.0" prefHeight="39.0" prefWidth="250.0" />
+      <TextField fx:id="surname" layoutX="62.0" layoutY="103.0" prefHeight="39.0" prefWidth="250.0" />
+      <TextField fx:id="address" layoutX="589.0" layoutY="305.0" />
+      <TextField fx:id="mail" layoutX="324.0" layoutY="305.0" />
+      <Label fx:id="stateSurname" layoutX="62.0" layoutY="69.0" text="Фамилия" />
+      <DatePicker fx:id="birthday" layoutX="63.0" layoutY="194.0" />
+      <Label fx:id="stateName" layoutX="349.0" layoutY="69.0" text="Имя" />
+      <Label fx:id="statePatronymic" layoutX="618.0" layoutY="69.0" text="Отчество" />
+      <Label fx:id="stateBirthday" layoutX="63.0" layoutY="160.0" text="Дата рождения" />
+      <Label layoutX="325.0" layoutY="271.0" text="e-mail" />
+      <Label layoutX="589.0" layoutY="271.0" text="Адрес" />
+      <Label layoutX="63.0" layoutY="269.0" text="моб.телефон" />
+      <TextField fx:id="mobPhone" layoutX="62.0" layoutY="303.0" />
+      <TextField fx:id="bank_account" layoutX="349.0" layoutY="194.0" />
+      <Label fx:id="stateBankAccount" layoutX="351.0" layoutY="160.0" text="Лицевой счет" />
+   </children>
+</AnchorPane>
